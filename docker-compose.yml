@@ -1,0 +1,11 @@
+# docker-compose.yml
+version: '3'
+services:
+  server:
+    image: hmurafiqu/my-server:latest
+    ports:
+      - "3000:3000"
+  client:
+    image: hmurafique/my-client:latest
+    ports:
+      - "80:80"
